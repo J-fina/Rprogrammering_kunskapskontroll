@@ -1,0 +1,41 @@
+KÖRINSTRUKTION
+
+1) ÖPPNA PROJEKTET
+- Öppna filen Kod.R i RStudio (eller annan R-miljö).
+
+2) INSTALLERA PAKET (EN GÅNG)
+- Om tidyverse inte ar installerat, kör:
+  install.packages("tidyverse")
+
+3) KÖR SKRIPTET
+- Kor hela Kod.R (Source / Run all).
+- Nar file.choose() visas: välj din CSV-fil med datasetet.
+
+4) VAD SKRIPTET GÖR
+- Laser in data.
+- Gör datastädning (saknade värden, trimws/tolower, factors).
+- Skapar nya variabler (bmi_category och risk_score).
+- Ritar 4 diagram.
+- Bygger 2 regressionsmodeller.
+- Jämför modellerna med R2.
+- Sparar resultat i output-mappen.
+
+5) OUTPUT SOM SKAPAS
+I mappen output/ sparas:
+- 01_histogram_charges.png
+- 02_boxplot_smoker_charges.png
+- 03_scatter_age_charges.png
+- 04_boxplot_bmi_category_charges.png
+- modellresultat.txt
+
+6) VANLIGA FEL
+- "there is no package called tidyverse"
+  -> Kör install.packages("tidyverse")
+
+- Fel vid filinläsning
+  -> Kontrollera att du väljer ratt CSV-fil nar file.choose() öppnas.
+
+- Inga bilder sparas
+  -> Kontrollera att skriptet kör hela vägen till slut.
+
+Klart.
